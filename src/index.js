@@ -1,13 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { NavbarProvider } from "./contexts/NavbarContext";
+import { router } from "./App";
+import { RouterProvider } from "react-router-dom";
+import { ThemeProvider } from "@mui/material";
+import { theme } from "./theme";
+import { CssBaseline } from "@mui/material";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <CssBaseline />
+    <ThemeProvider theme={theme}>
+      <RouterProvider router={router}>
+        <App />
+      </RouterProvider>
+    </ThemeProvider>
   </React.StrictMode>
 );
 

@@ -1,0 +1,67 @@
+.website-photo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  border-radius: 20px;
+}
+
+.website-photo-div {
+  position: relative;
+
+  width: 94%;
+  height: 100%;
+  border-radius: 20px;
+  transform: 0.3s ease;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 28px, rgba(0, 0, 0, 0.22) 0px 8px 10px;
+  cursor: pointer;
+}
+
+.website-photo-div:hover {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+}
+.hr-line {
+  position: absolute;
+  border: none;
+  border-left: 1px solid black;
+  height: 100%;
+  width: 2px;
+  top: -2%;
+  left: 50%;
+}
+.first-side {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+
+  border-radius: 20px 0 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.first-sid {
+  background-color: rgba(255, 151, 231, 0.2);
+}
+
+.second-side {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  border-radius: 0 20px 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .second-side:hover {
+  background-color: rgba(134, 255, 251, 0.2);
+} */
