@@ -27,7 +27,7 @@ const Footer = () => {
         }}
       >
         <a
-          href="https://github.com/JohnnyFalcon"
+          href="https://github.com/JohnnyFalcon/Personal-website"
           target="_blank"
           rel="noreferrer"
           style={{ textDecoration: "none" }}

@@ -1,7 +1,8 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery } from "@mui/material";
 import cv from "../../cv.pdf";
 const Contact = () => {
+  const isMobile = useMediaQuery("(max-width:1000px)");
   return (
     <>
       <Box
@@ -13,7 +14,9 @@ const Contact = () => {
           pb: "9%",
           justifyContent: "center",
           alignItems: "center",
-          flexDirection: "column"
+          flexDirection: "column",
+          pl: isMobile && "5%",
+          pr: isMobile && "3%"
         }}
       >
         <Typography
@@ -28,9 +31,12 @@ const Contact = () => {
         >
           Get In <span style={{ color: "#871818" }}>Touch</span>
         </Typography>
-        <Typography variant="body1" sx={{ fontSize: "1.5rem", mb: 3 }}>
-          If you need beautiful website that people love or need ambitious
-          employee for your company.
+        <Typography
+          variant="body1"
+          sx={{ fontSize: "1.5rem", mb: isMobile ? 7 : 3 }}
+        >
+          If you need beautiful website that people love and need ambitious
+          employee for your company
         </Typography>
         <Typography
           variant="body1"

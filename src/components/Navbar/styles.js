@@ -13,7 +13,18 @@ const ButtonStyled = styled(Button)({
     transform: "translateY(-1px)"
   }
 });
+const ButtonStyledMobile = styled(Button)({
+  borderColor: "white",
 
+  "&:hover": {
+    color: "white",
+    borderColor: "black"
+  },
+
+  "&:active": {
+    transform: "translateY(-1px)"
+  }
+});
 const ButtonStyledRev = styled(Button)({
   borderColor: "black",
   marginRight: 50,
@@ -39,4 +50,4 @@ const TypographyStyled = styled(Typography)({
   borderBottomStyle: "solid"
 });
 
-export { ButtonStyled, ButtonStyledRev, TypographyStyled };
+export { ButtonStyled, ButtonStyledRev, TypographyStyled, ButtonStyledMobile };

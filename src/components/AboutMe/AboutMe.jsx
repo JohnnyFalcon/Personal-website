@@ -1,5 +1,5 @@
-import { Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { Typography, Box, useMediaQuery } from "@mui/material";
+
 import React from "react";
 import { Link } from "react-router-dom";
 import profilePhoto from "../../images/kuba.png";
@@ -13,19 +13,23 @@ import nodeIcon from "../../images/node-icon.png";
 import apiIcon from "../../images/api-icon.png";
 import gitIcon from "../../images/git-icon.png";
 const AboutMe = () => {
+  const isMobile = useMediaQuery("(max-width:1000px)");
   return (
     <>
       <Box
         sx={{
           display: "flex",
           flexDirection: "row",
-          pt: "13%",
-          ml: 8
+          pt: isMobile ? "20%" : "13%",
+
+          justifyContent: isMobile && "center"
         }}
       >
         <Box
+          display={isMobile && "none"}
           sx={{
-            width: "300px"
+            width: "300px",
+            ml: 8
           }}
         >
           <img
@@ -34,7 +38,14 @@ const AboutMe = () => {
             alt="background"
           />
         </Box>
-        <Box sx={{ width: "65%", ml: 4 }}>
+        <Box
+          sx={{
+            width: isMobile ? "100%" : "65%",
+            ml: !isMobile && 4,
+            ml: 8,
+            mr: isMobile && 8
+          }}
+        >
           <Typography
             variant="body1"
             sx={{
@@ -58,28 +69,19 @@ const AboutMe = () => {
             University, but after 2 years I have decided to take a one-year
             break because I was not acquiring the necessary skills to become a
             web developer. I have decided to learn it on my own. <br /> <br />
-          </Typography>
-          <Typography variant="body2" sx={{ fontSize: "1.5rem" }}>
             For 2 years I worked really hard to master various skills and
-            currently I have around a year of
-          </Typography>
-          <Box sx={{ display: "flex", flexDirection: "row" }}>
-            <Typography variant="body2" sx={{ fontSize: "1.5rem" }}>
-              experience with complex&nbsp;
-            </Typography>
+            currently I have around a year of experience with complex&nbsp;
             <Link to="/projects" className="link">
-              <TypographyStyled variant="body2" className="link-projects">
-                projects
-              </TypographyStyled>
+              <span className="link-projects"> projects</span>
             </Link>
-            <Typography variant="body2" sx={{ fontSize: "1.5rem" }}>
-              &nbsp;with databases, APIs, and mobile responsiveness.
-            </Typography>
-          </Box>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;with databases, APIs, and mobile
+            responsiveness.
+          </Typography>
         </Box>
       </Box>
 
-      {/* My skills segment */}
+      {/* ---------------- My skills segment ---------------------*/}
 
       <Typography
         variant="body1"
@@ -99,8 +101,10 @@ const AboutMe = () => {
             flexDirection: "row",
             display: "flex",
             justifyContent: "space-around",
-            pl: "20%",
-            pr: "20%"
+            pl: isMobile ? "10%" : "20%",
+            pr: isMobile ? "10%" : "20%",
+            ml: isMobile && -3,
+            mr: isMobile && -3
           }}
         >
           <Box
@@ -161,16 +165,18 @@ const AboutMe = () => {
           </Box>
         </Box>
 
-        {/* Second Row of my skills */}
+        {/* ---------------------- Second Row of my skills ------------------*/}
 
         <Box
           sx={{
             flexDirection: "row",
             display: "flex",
             justifyContent: "space-around",
-            pl: "30%",
-            pr: "30%",
-            mt: 10
+            pl: isMobile ? "10%" : "30%",
+            pr: isMobile ? "10%" : "30%",
+            mt: 10,
+            ml: isMobile && -3,
+            mr: isMobile && -3
           }}
         >
           <Box
@@ -272,9 +278,9 @@ const AboutMe = () => {
             sx={{
               fontSize: "1.5rem",
               fontWeight: "bold",
-              mr: 25,
+              mr: isMobile ? 8 : 25,
               opacity: 0.8,
-              ml: -10
+              ml: isMobile ? 1 : -10
             }}
           >
             TYPESCRIPT.JS
@@ -298,7 +304,7 @@ const AboutMe = () => {
             sx={{
               fontSize: "1.5rem",
               fontWeight: "bold",
-              ml: 25,
+              ml: isMobile ? 10 : 25,
               opacity: 0.8
             }}
           >

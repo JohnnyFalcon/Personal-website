@@ -16,9 +16,19 @@
   opacity: 0.1;
 }
 .link-projects {
+  position: absolute;
   color: #871818;
   font-size: 1.5rem;
+  border-bottom-width: 1px;
+  border-bottom-color: #871818;
+  padding-bottom: 1px;
+  border-bottom-style: solid;
 }
+
+.link-projects:hover {
+  transform: translateY(-2px);
+}
+
 .hrLine2 {
   border: 0;
   height: 2px;

@@ -6,7 +6,7 @@ import LanguageIcon from "@mui/icons-material/Language";
 import { projects } from "./projectsData";
 const Projects = () => {
   const [hover, setHover] = useState(null);
-  const isMobile = useMediaQuery("(max-width:900px)");
+  const isMobile = useMediaQuery("(max-width:1000px)");
   return (
     <>
       <Typography
@@ -14,7 +14,7 @@ const Projects = () => {
         sx={{
           fontFamily: ["Fuzzy Bubbles", "cursive"].join(","),
           fontSize: "2rem",
-          pt: "13%",
+          pt: isMobile ? "20%" : "13%",
           pb: 5,
           textAlign: "center"
         }}
@@ -43,7 +43,7 @@ const Projects = () => {
                 className="website-photo"
                 alt={`${project.title}`}
               />
-              {hover === project.id && (
+              {(hover === project.id || isMobile) && (
                 <div
                   style={{
                     display: "flex",
@@ -67,15 +67,17 @@ const Projects = () => {
                           fontSize: "3rem"
                         }}
                       />
-                      <span
-                        style={{
-                          color: "black",
-                          letterSpacing: 2,
-                          fontWeight: "bold"
-                        }}
-                      >
-                        GITHUB
-                      </span>
+                      <div className="side-option">
+                        <span
+                          style={{
+                            color: "black",
+                            letterSpacing: 2,
+                            fontWeight: "bold"
+                          }}
+                        >
+                          GITHUB
+                        </span>
+                      </div>
                     </Box>
                   </a>
                   <a
@@ -90,15 +92,17 @@ const Projects = () => {
                       sx={{ "&:hover": { backgroundColor: project.color } }}
                     >
                       <LanguageIcon sx={{ color: "black", fontSize: "3rem" }} />
-                      <span
-                        style={{
-                          color: "black",
-                          letterSpacing: 2,
-                          fontWeight: "bold"
-                        }}
-                      >
-                        WEBSITE
-                      </span>
+                      <div className="side-option">
+                        <span
+                          style={{
+                            color: "black",
+                            letterSpacing: 2,
+                            fontWeight: "bold"
+                          }}
+                        >
+                          WEBSITE
+                        </span>
+                      </div>
                     </Box>
                   </a>
                 </div>
