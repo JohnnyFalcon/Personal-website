@@ -1,11 +1,11 @@
-import { Box, Chip, Container, Typography, useMediaQuery } from "@mui/material";
+import { Box, Chip, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import myPhoto from "../../images/myPhoto.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "./styles.css";
 import { Link } from "react-router-dom";
 import profilePhoto from "../../images/kuba.png";
-import cv from "../../cv.pdf";
+
 const Main = () => {
   const isMobile = useMediaQuery("(max-width:1000px)");
   return (
@@ -60,7 +60,7 @@ const Main = () => {
               sx={{
                 color: "white",
                 fontFamily: ["Fuzzy Bubbles", "cursive"].join(","),
-                fontSize: "4.5rem",
+                fontSize: "3.5rem",
                 mb: 2
               }}
             >
@@ -73,7 +73,7 @@ const Main = () => {
                   variant="h3"
                   sx={{
                     color: "white",
-                    fontSize: "2rem"
+                    fontSize: "1.5rem"
                   }}
                 >
                   Front-<span style={{ color: "#871818" }}>end</span> developer
@@ -152,7 +152,7 @@ const Main = () => {
               top: "55%",
               left: "50%",
               transform: "translate(-50%, -50%)",
-              width: "300px",
+              width: "200px",
               "&:active": {
                 transform: "translateY(-1px) scaleY(-1)"
               }

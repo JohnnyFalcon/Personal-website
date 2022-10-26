@@ -7,7 +7,7 @@ import reactIcon from "../../images/react-icon.png";
 import jsIcon from "../../images/js-icon.png";
 import cssIcon from "../../images/css-icon.png";
 import "./styles.css";
-import { TypographyStyled } from "../Navbar/styles";
+
 import htmlIcon from "../../images/html-icon.png";
 import nodeIcon from "../../images/node-icon.png";
 import apiIcon from "../../images/api-icon.png";
@@ -41,9 +41,9 @@ const AboutMe = () => {
         <Box
           sx={{
             width: isMobile ? "100%" : "65%",
-            ml: !isMobile && 4,
-            ml: 8,
-            mr: isMobile && 8
+
+            ml: isMobile ? 4 : 8,
+            mr: isMobile && 4
           }}
         >
           <Typography
@@ -276,11 +276,11 @@ const AboutMe = () => {
           <Typography
             variant="body2"
             sx={{
-              fontSize: "1.5rem",
+              fontSize: isMobile ? "1.2rem" : "1.5rem",
               fontWeight: "bold",
-              mr: isMobile ? 8 : 25,
+              mr: isMobile ? 5 : 25,
               opacity: 0.8,
-              ml: isMobile ? 1 : -10
+              ml: isMobile ? 0 : -10
             }}
           >
             TYPESCRIPT.JS
@@ -302,9 +302,9 @@ const AboutMe = () => {
           <Typography
             variant="body2"
             sx={{
-              fontSize: "1.5rem",
+              fontSize: isMobile ? "1.2rem" : "1.5rem",
               fontWeight: "bold",
-              ml: isMobile ? 10 : 25,
+              ml: isMobile ? 6 : 25,
               opacity: 0.8
             }}
           >

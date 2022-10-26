@@ -1,13 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  Toolbar,
-  useMediaQuery,
-  Box,
-  MenuItem,
-  Menu,
-  Popover,
-  Chip
-} from "@mui/material";
+import { Toolbar, useMediaQuery, Box, Popover } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import { ButtonStyled, ButtonStyledMobile } from "./styles";
 import MoreIcon from "@mui/icons-material/MoreVert";
@@ -18,19 +10,13 @@ const Navbar = () => {
   const [choosen, setChoosen] = useState(false);
   const isMobile = useMediaQuery("(max-width:1000px)");
   let location = useLocation();
-  const [anchorEl, setAnchorEl] = React.useState(null);
+
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
-  const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    handleMobileMenuClose();
   };
 
   const handleMobileMenuOpen = (event) => {
@@ -42,6 +28,7 @@ const Navbar = () => {
     } else {
       setChoosen(false);
     }
+    setMobileMoreAnchorEl(null);
   }, [location]);
   return (
     <>
@@ -115,12 +102,13 @@ const Navbar = () => {
             <Box
               sx={{
                 backgroundColor: "rgb(135, 24, 24)",
-
+                position: "fixed",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 borderRadius: "100%",
-                p: 1
+                p: 1,
+                zIndex: 10
               }}
             >
               <MoreIcon sx={{ color: "white" }} />
@@ -142,6 +130,7 @@ const Navbar = () => {
             PaperProps={{
               sx: {
                 display: "flex",
+                position: "fixed",
                 flexDirection: "column",
                 backgroundColor: "black",
                 justifyContent: "space-evenly",

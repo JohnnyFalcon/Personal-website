@@ -48,6 +48,13 @@
   border-color: black transparent transparent black;
   transform: rotate(135deg);
 }
+@media only screen and (max-width: 600px) {
+  .arrow {
+    border: 4px solid;
+    border-color: black transparent transparent black;
+    transform: rotate(135deg);
+  }
+}
 
 .arrowSliding {
   position: absolute;

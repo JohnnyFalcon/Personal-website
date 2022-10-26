@@ -1,4 +1,4 @@
-import { Paper, Typography, Box, Grid, useMediaQuery } from "@mui/material";
+import { Typography, Box, Grid, useMediaQuery } from "@mui/material";
 import React, { useState } from "react";
 import "./styles.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
