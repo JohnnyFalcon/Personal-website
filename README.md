@@ -1,9 +1,12 @@
-# Getting Started with Create React App
+# My personal website jakubsokolowski.me
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://user-images.githubusercontent.com/82409487/198164170-289534aa-cd6e-4a6a-b355-159336081d0d.png)
+
+
 
 ## Available Scripts
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 In the project directory, you can run:
 
 ### `npm start`
