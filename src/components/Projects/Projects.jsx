@@ -4,9 +4,23 @@ import "./styles.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
 import { projects } from "./projectsData";
+import { useEffect } from "react";
 const Projects = () => {
   const [hover, setHover] = useState(null);
+  const [today, setToday] = useState(0);
   const isMobile = useMediaQuery("(max-width:1000px)");
+
+  useEffect(() => {
+    const today = new Date();
+    setToday(today);
+  }, []);
+
+  const handleTime = (date) => {
+    const timePass = Math.abs(today - new Date(date));
+    const formatTime = Math.ceil(timePass / (1000 * 60 * 60 * 24));
+    return formatTime;
+  };
+
   return (
     <>
       <Typography
@@ -105,6 +119,16 @@ const Projects = () => {
                       </div>
                     </Box>
                   </a>
+                </div>
+              )}
+              {project.new && (
+                <div className="new-badge-container">
+                  <div className="new-badge">
+                    <span className="new-badge-text">NEW PROJECT</span>
+                  </div>
+                  <div className="new-badge">
+                    <span>{handleTime(project.date)}d ago</span>
+                  </div>
                 </div>
               )}
             </div>

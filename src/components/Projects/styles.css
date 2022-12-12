@@ -77,6 +77,32 @@
   display: flex;
   padding-top: 3;
 }
+
+.new-badge-container {
+  position: absolute;
+  top: -3%;
+  right: 7%;
+  display: flex;
+  flex-direction: row;
+}
+
+.new-badge {
+  background-color: rgb(135, 24, 24);
+  padding: 3px;
+  border-radius: 12px;
+  color: white;
+  margin-right: 10px;
+}
+
+.new-badge-text {
+  display: flex;
+  justify-content: center;
+}
+
+.website-photo-div:hover .new-badge {
+  display: none;
+}
+
 /* .second-side:hover {
   background-color: rgba(134, 255, 251, 0.2);
 } */

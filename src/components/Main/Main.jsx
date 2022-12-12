@@ -125,7 +125,6 @@ const Main = () => {
               </p>
             </a>
           </Box>
-
           <hr className="hrLine" />
         </Box>
         <Link to="about-me" className="link">
