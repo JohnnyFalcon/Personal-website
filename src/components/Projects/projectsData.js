@@ -12,6 +12,7 @@ export const projects = [
     githubLink: "https://github.com/JohnnyFalcon/calculator_app",
     color: "rgba(134, 255, 251, 0.2)",
     new: true,
+    update: "NEW PROJECT",
     date: "2022-12-12"
   },
   {
@@ -20,7 +21,10 @@ export const projects = [
     image: clothingappPhoto,
     websiteLink: "https://regal-daifuku-70a96b.netlify.app",
     githubLink: "https://github.com/JohnnyFalcon/clothingapp",
-    color: "rgba(134, 255, 251, 0.2)"
+    color: "rgba(134, 255, 251, 0.2)",
+    new: true,
+    update: "UPDATED",
+    date: "2022-12-13"
   },
   {
     id: 3,

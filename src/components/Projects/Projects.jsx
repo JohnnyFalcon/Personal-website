@@ -124,7 +124,7 @@ const Projects = () => {
               {project.new && (
                 <div className="new-badge-container">
                   <div className="new-badge">
-                    <span className="new-badge-text">NEW PROJECT</span>
+                    <span className="new-badge-text">{project.update}</span>
                   </div>
                   <div className="new-badge">
                     <span>{handleTime(project.date)}d ago</span>
