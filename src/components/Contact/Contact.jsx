@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Typography, useMediaQuery } from "@mui/material";
-import cv from "../../cv.pdf";
 const Contact = () => {
   const isMobile = useMediaQuery("(max-width:1000px)");
   return (
