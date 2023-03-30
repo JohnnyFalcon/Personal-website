@@ -1,13 +1,18 @@
 import { Box, Chip, Typography, useMediaQuery } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import myPhoto from "../../images/myPhoto.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "./styles.css";
 import { Link } from "react-router-dom";
 import profilePhoto from "../../images/kuba.png";
+import { getAnalytics, logEvent } from "firebase/analytics";
 
 const Main = () => {
   const isMobile = useMediaQuery("(max-width:1000px)");
+  useEffect(() => {
+    const analytics = getAnalytics();
+    logEvent(analytics, "page_visted");
+  }, []);
   return (
     <>
       <Box>
