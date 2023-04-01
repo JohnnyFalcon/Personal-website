@@ -6,11 +6,11 @@ import "./styles.css";
 import { Link } from "react-router-dom";
 import profilePhoto from "../../images/kuba.png";
 import { getAnalytics, logEvent } from "firebase/analytics";
-
+import { app } from "../../index";
 const Main = () => {
   const isMobile = useMediaQuery("(max-width:1000px)");
   useEffect(() => {
-    const analytics = getAnalytics();
+    const analytics = getAnalytics(app);
     logEvent(analytics, "page_visted");
   }, []);
   return (
