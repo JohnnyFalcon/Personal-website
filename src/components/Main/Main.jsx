@@ -153,28 +153,26 @@ const Main = () => {
           <img src={profilePhoto} className="profile-img" alt="background" />
         </Box>
 
-        <Link to="about-me" className="link">
-          <Box
-            display={isMobile ? "flex" : "none"}
-            sx={{
-              position: "absolute",
-              top: "55%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              width: "200px",
-              "&:active": {
-                transform: "translateY(-1px) scaleY(-1)"
-              }
-            }}
-          >
-            <img
-              src={profilePhoto}
-              className="profile-img"
-              alt="background"
-              style={{ opacity: 1 }}
-            />
-          </Box>
-        </Link>
+        <Box
+          display={isMobile ? "flex" : "none"}
+          sx={{
+            position: "absolute",
+            top: "55%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: "200px",
+            "&:active": {
+              transform: "translateY(-1px) scaleY(-1)"
+            }
+          }}
+        >
+          <img
+            src={profilePhoto}
+            className="profile-img"
+            alt="background"
+            style={{ opacity: 1 }}
+          />
+        </Box>
       </Box>
     </>
   );
