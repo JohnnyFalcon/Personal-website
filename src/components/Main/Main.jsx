@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import profilePhoto from "../../images/kuba.png";
 import { getAnalytics, logEvent } from "firebase/analytics";
 import { app } from "../../index";
-import { ButtonStyled } from "./styles";
+
 const Main = () => {
   const isMobile = useMediaQuery("(max-width:1000px)");
   useEffect(() => {
@@ -128,7 +128,13 @@ const Main = () => {
           </Box>
           <hr className="hrLine" />
 
-          <Link to="projects" className="link-project">
+          <Link
+            to="projects"
+            className="link-project"
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0 });
+            }}
+          >
             <p className="btn btn-project  btn-project-bg">
               pro
               <span style={{ color: "black", paddingRight: "20px" }}>

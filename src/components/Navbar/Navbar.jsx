@@ -22,7 +22,7 @@ const Navbar = () => {
     <>
       <Toolbar
         sx={{
-          position: "absolute",
+          position: "fixed",
           width: "100%",
           display: "flex",
           justifyContent: "flex-start",
