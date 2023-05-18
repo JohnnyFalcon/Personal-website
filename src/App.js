@@ -3,7 +3,6 @@ import { CssBaseline } from "@mui/material";
 import Main from "./components/Main/Main";
 
 import Navbar from "./components/Navbar/Navbar";
-import AboutMe from "./components/AboutMe/AboutMe";
 
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
@@ -16,10 +15,6 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <Main />
-      },
-      {
-        path: "about-me",
-        element: <AboutMe />
       },
       {
         path: "projects",

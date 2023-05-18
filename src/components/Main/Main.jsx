@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import profilePhoto from "../../images/kuba.png";
 import { getAnalytics, logEvent } from "firebase/analytics";
 import { app } from "../../index";
+import { ButtonStyled } from "./styles";
 const Main = () => {
   const isMobile = useMediaQuery("(max-width:1000px)");
   useEffect(() => {
@@ -91,7 +92,7 @@ const Main = () => {
         <Box
           sx={{
             position: "absolute",
-            top: isMobile ? "83%" : "72%",
+            top: isMobile ? "79%" : "72%",
             left: isMobile ? "50%" : "65%",
             justifyContent: "center",
             transform: isMobile && "translate(-50%, -50%)"
@@ -122,32 +123,36 @@ const Main = () => {
               rel="noreferrer"
               style={{ textDecoration: "none" }}
             >
-              <p
-                className="btn btn-resume-bg btn-resume"
-                style={{ paddingBottom: "12px" }}
-              >
-                resume
-              </p>
+              <p className="btn btn-resume-bg btn-resume">resume</p>
             </a>
           </Box>
           <hr className="hrLine" />
+
+          <Link to="projects" className="link-project">
+            <p className="btn btn-project  btn-project-bg">
+              pro
+              <span style={{ color: "black", paddingRight: "20px" }}>
+                jects
+              </span>
+            </p>
+          </Link>
         </Box>
-        <Link to="about-me" className="link">
-          <Box
-            display={isMobile ? "none" : "flex"}
-            sx={{
-              position: "absolute",
-              top: "65%",
-              left: "2%",
-              width: "300px",
-              "&:active": {
-                transform: "translateY(-1px) scaleY(-1)"
-              }
-            }}
-          >
-            <img src={profilePhoto} className="profile-img" alt="background" />
-          </Box>
-        </Link>
+
+        <Box
+          display={isMobile ? "none" : "flex"}
+          sx={{
+            position: "absolute",
+            top: "60%",
+            left: "2%",
+            width: "300px",
+            "&:active": {
+              transform: "translateY(-1px) scaleY(-1)"
+            }
+          }}
+        >
+          <img src={profilePhoto} className="profile-img" alt="background" />
+        </Box>
+
         <Link to="about-me" className="link">
           <Box
             display={isMobile ? "flex" : "none"}

@@ -23,6 +23,7 @@ const Footer = () => {
           backgroundColor: "black",
           textAlign: "center",
           p: 2,
+          pt: 2.5,
           mt: choosen ? 15 : -1
         }}
       >
@@ -43,40 +44,6 @@ const Footer = () => {
           >
             Designed & Built by Jakub Sokołowski
           </Typography>
-        </a>
-        <span style={{ color: "#871818", fontSize: "0.9rem" }}>
-          Thanks for icons&nbsp;
-        </span>
-        <a
-          href="https://www.flaticon.com"
-          title="icons"
-          style={{ color: "#871818", fontSize: "0.9rem" }}
-        >
-          Freepik - Flaticon
-        </a>
-        <span>&nbsp;&nbsp;</span>
-        <a
-          style={{ color: "#871818", fontSize: "0.9rem" }}
-          href="https://www.flaticon.com/free-icons/git"
-          title="git icons"
-        >
-          smalllikeart - Flaticon
-        </a>
-        <span>&nbsp;&nbsp;</span>
-        <a
-          style={{ color: "#871818", fontSize: "0.9rem" }}
-          href="https://www.flaticon.com/free-icons/api"
-          title="api icons"
-        >
-          surang - Flaticon
-        </a>
-        <span>&nbsp;&nbsp;</span>
-        <a
-          style={{ color: "#871818", fontSize: "0.9rem" }}
-          href="https://www.flaticon.com/free-icons/html"
-          title="html icons"
-        >
-          Flat Icons - Flaticon
         </a>
       </Box>
     </>

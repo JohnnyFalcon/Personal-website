@@ -28,7 +28,7 @@ const Projects = () => {
         sx={{
           fontFamily: ["Fuzzy Bubbles", "cursive"].join(","),
           fontSize: "2rem",
-          pt: isMobile ? "20%" : "13%",
+          pt: isMobile ? "20%" : "5%",
           pb: 5,
           textAlign: "center"
         }}

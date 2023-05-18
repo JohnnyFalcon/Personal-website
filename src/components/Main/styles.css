@@ -4,6 +4,12 @@
   height: 100vh;
   overflow-y: hidden;
 }
+.link-project {
+  text-decoration: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .btn {
   text-transform: uppercase;
   text-decoration: none;
@@ -22,6 +28,11 @@
 
 .btn-resume {
   margin-left: 60px;
+}
+.btn-project {
+  background: linear-gradient(-60deg, white 55%, black 45%);
+  margin-top: 25px;
+  padding-right: 0;
 }
 
 .btn:hover {
@@ -52,6 +63,11 @@
 .btn-resume-bg::after {
   background-color: white;
 }
+
+.btn-project-bg::after {
+  background: linear-gradient(-60deg, white 55%, black 45%);
+}
+
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
