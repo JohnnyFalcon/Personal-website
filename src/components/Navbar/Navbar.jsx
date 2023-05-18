@@ -26,13 +26,20 @@ const Navbar = () => {
           width: "100%",
           display: "flex",
           justifyContent: "flex-start",
-          mt: 2
+          mt: 2,
+          zIndex: 10
         }}
         className="Toolbar"
       >
         {choosen && (
           <Box sx={{ display: "flex" }}>
-            <Link to="/" className="link">
+            <Link
+              to="/"
+              className="link"
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0 });
+              }}
+            >
               <HomeIcon
                 className="home-icon"
                 sx={{ color: "black", fontSize: "2rem" }}
