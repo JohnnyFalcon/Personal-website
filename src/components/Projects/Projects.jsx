@@ -44,96 +44,101 @@ const Projects = () => {
         justifyContent="space-around"
         sx={{ pl: "10%", pr: "8%" }}
       >
-        {projects.map((project) => (
-          <Grid item key={project.id} lg={6} md={12} sm={12} xs={12}>
-            <div
-              className="website-photo-div"
-              value={"clothing"}
-              onMouseEnter={() => setHover(project.id)}
-              onMouseLeave={() => setHover(null)}
-            >
-              <img
-                src={project.image}
-                className="website-photo"
-                alt={`${project.title}`}
-              />
-              {(hover === project.id || isMobile) && (
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "row"
-                  }}
-                >
-                  <a
-                    href={`${project.githubLink}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    value={"clothing"}
-                    style={{ textDecoration: "none" }}
+        {projects
+          .slice(0)
+          .reverse()
+          .map((project) => (
+            <Grid item key={project.id} lg={6} md={12} sm={12} xs={12}>
+              <div
+                className="website-photo-div"
+                value={"clothing"}
+                onMouseEnter={() => setHover(project.id)}
+                onMouseLeave={() => setHover(null)}
+              >
+                <img
+                  src={project.image}
+                  className="website-photo"
+                  alt={`${project.title}`}
+                />
+                {(hover === project.id || isMobile) && (
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row"
+                    }}
                   >
-                    <Box
-                      className="first-side"
-                      sx={{ "&:hover": { backgroundColor: project.color } }}
+                    <a
+                      href={`${project.githubLink}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      value={"clothing"}
+                      style={{ textDecoration: "none" }}
                     >
-                      <GitHubIcon
-                        sx={{
-                          color: "black",
-                          fontSize: "3rem"
-                        }}
-                      />
-                      <div className="side-option">
-                        <span
-                          style={{
+                      <Box
+                        className="first-side"
+                        sx={{ "&:hover": { backgroundColor: project.color } }}
+                      >
+                        <GitHubIcon
+                          sx={{
                             color: "black",
-                            letterSpacing: 2,
-                            fontWeight: "bold"
+                            fontSize: "3rem"
                           }}
-                        >
-                          GITHUB
-                        </span>
-                      </div>
-                    </Box>
-                  </a>
-                  <a
-                    href={`${project.websiteLink}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    value={"clothing"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Box
-                      className="second-side"
-                      sx={{ "&:hover": { backgroundColor: project.color } }}
+                        />
+                        <div className="side-option">
+                          <span
+                            style={{
+                              color: "black",
+                              letterSpacing: 2,
+                              fontWeight: "bold"
+                            }}
+                          >
+                            GITHUB
+                          </span>
+                        </div>
+                      </Box>
+                    </a>
+                    <a
+                      href={`${project.websiteLink}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      value={"clothing"}
+                      style={{ textDecoration: "none" }}
                     >
-                      <LanguageIcon sx={{ color: "black", fontSize: "3rem" }} />
-                      <div className="side-option">
-                        <span
-                          style={{
-                            color: "black",
-                            letterSpacing: 2,
-                            fontWeight: "bold"
-                          }}
-                        >
-                          WEBSITE
-                        </span>
-                      </div>
-                    </Box>
-                  </a>
-                </div>
-              )}
-              {project.new && (
-                <div className="new-badge-container">
-                  <div className="new-badge">
-                    <span className="new-badge-text">{project.update}</span>
+                      <Box
+                        className="second-side"
+                        sx={{ "&:hover": { backgroundColor: project.color } }}
+                      >
+                        <LanguageIcon
+                          sx={{ color: "black", fontSize: "3rem" }}
+                        />
+                        <div className="side-option">
+                          <span
+                            style={{
+                              color: "black",
+                              letterSpacing: 2,
+                              fontWeight: "bold"
+                            }}
+                          >
+                            WEBSITE
+                          </span>
+                        </div>
+                      </Box>
+                    </a>
                   </div>
-                  <div className="new-badge">
-                    <span>{handleTime(project.date)}d ago</span>
+                )}
+                {project.new && (
+                  <div className="new-badge-container">
+                    <div className="new-badge">
+                      <span className="new-badge-text">{project.update}</span>
+                    </div>
+                    <div className="new-badge">
+                      <span>{handleTime(project.date)}d ago</span>
+                    </div>
                   </div>
-                </div>
-              )}
-            </div>
-          </Grid>
-        ))}
+                )}
+              </div>
+            </Grid>
+          ))}
       </Grid>
     </>
   );
