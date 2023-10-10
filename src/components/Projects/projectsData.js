@@ -5,7 +5,7 @@ import piggamePhoto from "../../images/piggame-photo.png";
 import calcPhoto from "../../images/calculator-photo.png";
 import codiblyPhoto from "../../images/codibly-photo.png";
 import dishPhoto from "../../images/dish-form-photo.png";
-import passwordGenPhoto from "../../images/password-generator-photo";
+import passwordGenPhoto from "../../images/password-generator-photo.png";
 export const projects = [
   {
     id: 1,
