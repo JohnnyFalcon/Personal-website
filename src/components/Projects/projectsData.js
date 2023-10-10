@@ -5,6 +5,7 @@ import piggamePhoto from "../../images/piggame-photo.png";
 import calcPhoto from "../../images/calculator-photo.png";
 import codiblyPhoto from "../../images/codibly-photo.png";
 import dishPhoto from "../../images/dish-form-photo.png";
+import passwordGenPhoto from "../../images/password-generator-photo";
 export const projects = [
   {
     id: 1,
@@ -76,10 +77,10 @@ export const projects = [
   {
     id: 8,
     title: "Password generator",
-    image: dishPhoto,
+    image: passwordGenPhoto,
     websiteLink: "https://dreamy-elf-44eaef.netlify.app/",
     githubLink: "https://github.com/JohnnyFalcon/password-generator",
-    color: "rgb(164, 255, 175)",
+    color: "rgb(164, 255, 175, 0.2)",
     new: true,
     update: "NEW PROJECT",
     date: "2023-10-10"
