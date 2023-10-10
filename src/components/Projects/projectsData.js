@@ -70,8 +70,18 @@ export const projects = [
     websiteLink: "https://funny-fenglisu-cf3f29.netlify.app",
     githubLink: "https://github.com/JohnnyFalcon/dish-form",
     color: "rgb(163, 131, 88, 0.2)",
+    new: false,
+    date: "2023-06-27"
+  },
+  {
+    id: 8,
+    title: "Password generator",
+    image: dishPhoto,
+    websiteLink: "https://dreamy-elf-44eaef.netlify.app/",
+    githubLink: "https://github.com/JohnnyFalcon/password-generator",
+    color: "rgb(164, 255, 175)",
     new: true,
     update: "NEW PROJECT",
-    date: "2023-06-27"
+    date: "2023-10-10"
   }
 ];
