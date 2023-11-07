@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
 import profilePhoto from "../../images/kuba.png";
 import { getAnalytics, logEvent } from "firebase/analytics";
 import { app } from "../../index";
-
+import { Helmet } from "react-helmet";
+import titles from "../../titles";
 const Main = () => {
   const isMobile = useMediaQuery("(max-width:1000px)");
   useEffect(() => {
@@ -16,6 +17,9 @@ const Main = () => {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>{titles.home}</title>
+      </Helmet>
       <Box>
         <Box display={isMobile ? "none" : "flex"}>
           <img src={myPhoto} className="background-image" alt="background" />

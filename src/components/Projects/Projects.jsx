@@ -5,6 +5,8 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
 import { projects } from "./projectsData";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
+import titles from "../../titles";
 const Projects = () => {
   const [hover, setHover] = useState(null);
   const [today, setToday] = useState(0);
@@ -23,6 +25,9 @@ const Projects = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{titles.projects}</title>
+      </Helmet>
       <Typography
         variant="body1"
         sx={{
