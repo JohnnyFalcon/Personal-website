@@ -32,6 +32,7 @@ const Main = () => {
           >
             <Typography
               variant="h1"
+              className="title"
               sx={{
                 color: "white",
                 fontFamily: ["Fuzzy Bubbles", "cursive"].join(",")
@@ -41,6 +42,7 @@ const Main = () => {
             </Typography>
             <Typography
               variant="h3"
+              className="desc"
               sx={{
                 color: "white"
               }}
