@@ -6,6 +6,7 @@ import calcPhoto from "../../images/calculator-photo.png";
 import codiblyPhoto from "../../images/codibly-photo.png";
 import dishPhoto from "../../images/dish-form-photo.png";
 import passwordGenPhoto from "../../images/password-generator-photo.png";
+import universSS from "../../images/univers-ss.png";
 export const projects = [
   {
     id: 1,
@@ -70,7 +71,7 @@ export const projects = [
     image: dishPhoto,
     websiteLink: "https://funny-fenglisu-cf3f29.netlify.app",
     githubLink: "https://github.com/JohnnyFalcon/dish-form",
-    color: "rgb(163, 131, 88, 0.2)",
+    color: "rgba(163, 131, 88, 0.2)",
     new: false,
     date: "2023-06-27"
   },
@@ -80,9 +81,20 @@ export const projects = [
     image: passwordGenPhoto,
     websiteLink: "https://dreamy-elf-44eaef.netlify.app/",
     githubLink: "https://github.com/JohnnyFalcon/password-generator",
-    color: "rgb(164, 255, 175, 0.2)",
+    color: "rgba(164, 255, 175, 0.2)",
     new: true,
     update: "NEW PROJECT",
     date: "2023-10-10"
+  },
+  {
+    id: 9,
+    title: "Univers Rent",
+    image: universSS,
+    websiteLink: "https://www.univers.net.pl/",
+    githubLink: "https://github.com/JohnnyFalcon/univers_buses",
+    color: "rgba(218, 194, 177, 0.2)",
+    new: true,
+    update: "NEW PROJECT",
+    date: "2023-12-15"
   }
 ];
