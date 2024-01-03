@@ -40,8 +40,7 @@ export const projects = [
     websiteLink: "https://regal-daifuku-70a96b.netlify.app",
     githubLink: "https://github.com/JohnnyFalcon/clothingapp",
     color: "rgba(134, 255, 251, 0.2)",
-    new: true,
-    update: "UPDATED",
+    new: false,
     date: "2022-12-13"
   },
   {
@@ -92,7 +91,7 @@ export const projects = [
     image: universSS,
     websiteLink: "https://www.univers.net.pl/",
     githubLink: "https://github.com/JohnnyFalcon/univers_buses",
-    color: "rgba(218, 194, 177, 0.2)",
+    color: "rgba(218, 194, 177, 0.3)",
     new: true,
     update: "NEW PROJECT",
     date: "2023-12-15"
