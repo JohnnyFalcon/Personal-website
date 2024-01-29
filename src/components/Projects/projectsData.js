@@ -7,6 +7,7 @@ import codiblyPhoto from "../../images/codibly-photo.png";
 import dishPhoto from "../../images/dish-form-photo.png";
 import passwordGenPhoto from "../../images/password-generator-photo.png";
 import universSS from "../../images/univers-ss.png";
+import ipAddressPhoto from "../../images/ip-address-photo.png";
 export const projects = [
   {
     id: 1,
@@ -95,5 +96,16 @@ export const projects = [
     new: true,
     update: "NEW PROJECT",
     date: "2023-12-15"
+  },
+  {
+    id: 10,
+    title: "IP Address Tracker",
+    image: ipAddressPhoto,
+    websiteLink: "https://ip-address-tracker-jb.netlify.app/",
+    githubLink: "https://github.com/JohnnyFalcon/ip-address-tracker",
+    color: "rgba(81, 97, 196, 0.3)",
+    new: true,
+    update: "NEW PROJECT",
+    date: "2024-01-29"
   }
 ];
