@@ -7,7 +7,7 @@ import codiblyPhoto from "../../images/codibly-photo.png";
 import dishPhoto from "../../images/dish-form-photo.png";
 import passwordGenPhoto from "../../images/password-generator-photo.png";
 import universSS from "../../images/univers-ss.png";
-import ipAddressPhoto from "../../images/ip-address-photo.png";
+import ipAddressPhoto from "../../images/ip-address-tracker.png";
 export const projects = [
   {
     id: 1,
