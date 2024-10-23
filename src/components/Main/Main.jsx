@@ -47,7 +47,7 @@ const Main = () => {
                 color: "white"
               }}
             >
-              Front-<span style={{ color: "#871818" }}>end</span> developer
+              Full <span style={{ color: "#871818" }}>Stack</span> developer
             </Typography>
           </Box>
         </Box>
