@@ -88,7 +88,7 @@ const Main = () => {
                     fontSize: "1.5rem"
                   }}
                 >
-                  Front-<span style={{ color: "#871818" }}>end</span> developer
+                  Full Stack developer
                 </Typography>
               }
             />
