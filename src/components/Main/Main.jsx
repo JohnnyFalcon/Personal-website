@@ -124,7 +124,7 @@ const Main = () => {
               </p>
             </a>
             <a
-              href="https://drive.google.com/file/d/1QKofdt_36HlKNG17fGWl_zy_qnThETzK/view?usp=sharing"
+              href="https://drive.google.com/file/d/1LgKJ921wd6WczS3eZ-m72fBysHdtyMoI/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               style={{ textDecoration: "none" }}
