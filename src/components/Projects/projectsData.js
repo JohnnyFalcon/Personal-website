@@ -83,7 +83,7 @@ export const projects = [
     websiteLink: "https://dreamy-elf-44eaef.netlify.app/",
     githubLink: "https://github.com/JohnnyFalcon/password-generator",
     color: "rgba(164, 255, 175, 0.2)",
-    new: true,
+    new: false,
     update: false,
     date: "2023-10-10"
   },
@@ -94,7 +94,7 @@ export const projects = [
     websiteLink: "https://www.univers.net.pl/",
     githubLink: "https://github.com/JohnnyFalcon/univers_buses",
     color: "rgba(218, 194, 177, 0.3)",
-    new: true,
+    new: false,
     update: false,
     date: "2023-12-15"
   },
@@ -105,7 +105,7 @@ export const projects = [
     websiteLink: "https://ip-address-tracker-jb.netlify.app/",
     githubLink: "https://github.com/JohnnyFalcon/ip-address-tracker",
     color: "rgba(81, 97, 196, 0.3)",
-    new: true,
+    new: false,
     update: false,
     date: "2024-01-29"
   },
