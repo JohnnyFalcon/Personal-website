@@ -8,6 +8,7 @@ import dishPhoto from "../../images/dish-form-photo.png";
 import passwordGenPhoto from "../../images/password-generator-photo.png";
 import universSS from "../../images/univers-ss.png";
 import ipAddressPhoto from "../../images/ip-address-tracker.png";
+import lunchRoomPhoto from "../../images/lunch_room.png";
 export const projects = [
   {
     id: 1,
@@ -83,7 +84,7 @@ export const projects = [
     githubLink: "https://github.com/JohnnyFalcon/password-generator",
     color: "rgba(164, 255, 175, 0.2)",
     new: true,
-    update: "NEW PROJECT",
+    update: false,
     date: "2023-10-10"
   },
   {
@@ -94,7 +95,7 @@ export const projects = [
     githubLink: "https://github.com/JohnnyFalcon/univers_buses",
     color: "rgba(218, 194, 177, 0.3)",
     new: true,
-    update: "NEW PROJECT",
+    update: false,
     date: "2023-12-15"
   },
   {
@@ -105,7 +106,18 @@ export const projects = [
     githubLink: "https://github.com/JohnnyFalcon/ip-address-tracker",
     color: "rgba(81, 97, 196, 0.3)",
     new: true,
-    update: "NEW PROJECT",
+    update: false,
     date: "2024-01-29"
+  },
+  {
+    id: 11,
+    title: "Lunch Room",
+    image: lunchRoomPhoto,
+    websiteLink: "https://lunch-room.onrender.com",
+    githubLink: "https://github.com/JohnnyFalcon/lunch_room",
+    color: "rgba(40, 167, 69, 0.3)",
+    new: true,
+    update: "NEW PROJECT",
+    date: "2024-12-04"
   }
 ];
